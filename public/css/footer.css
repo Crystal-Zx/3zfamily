@@ -1,0 +1,11 @@
+#footer{
+    background: #1F1F1F;
+}
+.font-gray{
+    color: #83888A;
+}
+#footer .container>div>div:last-child>div:first-child>div{
+    width: 40%;
+    height: 0;
+    padding-bottom: 40%;
+}

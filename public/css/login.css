@@ -1,0 +1,78 @@
+.container span.welcome_title{
+    font-size: 24px;
+    font-family: 'SimHei';
+    position: relative;
+    top: 15px;
+}
+.container div.login_img{
+    float: left;
+    margin: 50px 0;
+}
+.container div.login_box{
+    width: 300px;
+    margin: 50px 0;
+    border:1px solid #eee;
+    padding: 30px 40px;
+    float: right;
+}
+.container div.login_box .login_method_title{
+    width: 109px;
+    height: 30px;
+    font-size: 16PX;
+    border-bottom: 2px solid #EEE;
+    display: block;
+}
+.container div.login_box .login_content{
+    width: 218px;
+    height: 240px;
+}
+.container div.login_box .login_content input.login_info{
+    width: 100%;
+    line-height: 30px;
+    padding-left: 8px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.container div.login_box .login_content input.login_info:focus{
+    border: 1px solid #0EAF63;
+}
+input::-webkit-input-placeholder {
+    font-size: 12px;
+}
+.container div.login_box .login_content .login_options{
+    margin-top: 20px;
+}
+.container div.login_box .login_content .login_options input.option_rem{
+    margin: 5px 5px 0 0;
+}
+.container div.login_box .login_content .login_btn{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    line-height: 32px;
+    background: #F36F20;
+    color: #fff;
+}
+.container div.login_box .login_content .login_btn:hover{
+    background: rgb(231,105,30);
+}
+.container div.login_box .login_content .other_methods{
+    font-size: 12px;
+    margin-top: 20px;
+}
+.container div.login_box .login_content .wx_login .user_help{
+    display: block;
+    font-size: 12px;
+}
+.hide{
+    display: none;
+}
+.active{
+    color: #0EAF63 !important;
+    border-bottom: 2px solid #0EAF63 !important;
+}
+#footer{
+    position: absolute;
+    right: 0;left: 0;bottom:0;
+}

@@ -1,0 +1,94 @@
+.container span.welcome_title{
+    font-size: 24px;
+    font-family: 'SimHei';
+    position: relative;
+    top: 15px;
+}
+.container div.reg_img{
+    float: left;
+    margin: 50px 0 0 100px;
+}
+.container div.reg_box{
+    width: 300px;
+    margin: 50px 200px 0 0;
+    border:1px solid #eee;
+    padding: 30px 40px;
+    float: right;
+}
+.container div.reg_box .reg_method_title{
+    width: 109px;
+    height: 30px;
+    font-size: 16PX;
+    border-bottom: 2px solid #EEE;
+    display: block;
+}
+.container div.reg_box .reg_method_title:focus{
+    color: #0EAF63;
+    border-bottom: 2px solid #0EAF63;
+}
+.container div.reg_box .reg_content{
+    width: 218px;
+    /* height: 240px; */
+}
+.container div.reg_box .reg_content input.reg_info{
+    width: 100%;
+    line-height: 30px;
+    padding-left: 8px;
+    /* margin-top: 20px; */
+    border: 1px solid #ddd;
+    outline: none;
+}
+.container div.reg_box .reg_content input.reg_info:focus{
+    border: 1px solid #0EAF63;
+}
+.container div.reg_box .reg_content div.hint{
+    height: 20px;
+}
+input::-webkit-input-placeholder {
+    font-size: 12px;
+}
+.container div.reg_box .reg_content .signin_btn{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    line-height: 32px;
+    background: #F36F20;
+    color: #fff;
+}
+.container div.reg_box .reg_content .signin_btn:hover{
+    background: rgb(231,105,30);
+}
+.container div.reg_box .reg_content .other_methods{
+    font-size: 12px;
+    margin-top: 20px;
+}
+.container div.reg_box .reg_content .clause_icon{
+    margin: 5px 5px 0 0;
+}
+.green_font{
+    color: #0EAF63;
+}
+label.clause{
+    font-size: 10px;
+}
+.hide{
+    display: none;
+}
+.active{
+    color: #0EAF63 !important;
+    border-bottom: 2px solid #0EAF63 !important;
+}
+#footer{
+    position: absolute;
+    right: 0;left: 0;bottom:0;
+}
+.hint_hide{
+    visibility: hidden;
+}
+.error_hint{
+    color: #FF6767;
+    /* border: 1px solid #FF6767; */
+}
+.error_border{
+    border: 1px solid #FF6767 !important;
+}

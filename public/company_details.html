@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>装修公司详情</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/company_details.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <main id="main">
+        <div class="container">
+            <!-- 顶部公司信息 -->
+            <div class="com_details_box mt-3 mb-3">
+                <!-- 左侧图片切换 -->
+                <div class="left_swiper d-flex flex-column align-items-between">
+                    <!-- <div class="big_img">
+                        <img src="http://127.0.0.1:3000/img/company_details/rcyj_swiper_1.jpg" alt="">
+                    </div>
+                    <ul class="sm_img d-flex justify-content-between mt-2">
+                        <li class="sm_img_border"><img src="http://127.0.0.1:3000/img/company_details/rcyj_swiper_1.jpg" alt=""></li>
+                        <li><img src="http://127.0.0.1:3000/img/company_details/rcyj_swiper_2.jpg" alt=""></li>
+                        <li><img src="http://127.0.0.1:3000/img/company_details/rcyj_swiper_3.jpg" alt=""></li>
+                        <li><img src="http://127.0.0.1:3000/img/company_details/rcyj_swiper_4.jpg" alt=""></li>
+                    </ul> -->
+                </div>
+                <!-- 右侧公司基本信息 -->
+                <div class="com_details ml-4">
+                    <!-- 第一行 -->
+                    <!-- <div class="row_1">
+                        <span class="com_name mr-2">成都蓉城壹家</span> -->
+                        <!-- 营业执照图标 -->
+                        <!-- <span class="license bs_icon mr-2">营</span> -->
+                        <!-- 认证公司图标 -->
+                        <!-- <span class="license rz_icon mr-2">认</span>
+                        <span>保证金：<b>￥0</b></span> -->
+                        <!-- 是否收藏：需设置可点击 -->
+                        <!-- <a href="#" class="collect_box"><span class="collect">收藏</span></a>
+                    </div> -->
+                    <!-- 第二行 -->
+                    <!-- <div class="row_2 d-flex">
+                        <div class="case mr-5">
+                            <p class="number"><b>993</b></p>
+                            <p class="label">设计案例</p>
+                        </div>
+                        <div class="recommond">
+                            <p class="number"><b>503</b></p>
+                            <p class="label">好评数</p>
+                        </div>
+                    </div>
+                    <div class="row_3"> -->
+                        <!-- 电话图标 -->
+                        <!-- <img src="http://127.0.0.1:3000/img/company_details/tel.png" alt=""> -->
+                        <!-- 公司联系电话 -->
+                        <!-- <span>13152469955</span>
+                    </div>
+                    <div class="row_4">
+                        <p class="com_addr">地址：
+                            <span>四川省成都市高新区成都高新区吉瑞四路IMC国际广场2单元801</span>
+                        </p>
+                    </div>
+                    <div class="row_5"> -->
+                        <!-- 预约按钮 -->
+                        <!-- <a href="#">免费预约</a>
+                    </div> -->
+                </div>
+            </div>
+            <!-- 下部详细信息 -->
+            <div class="bottom">
+                <!-- 左侧 设计案例 -->
+                <div class="case_list mb-3 float-left">
+                    <p class="module_title float-left">设计案例</p>
+                    <a href="#" class="arrow float-right">全部50套</a>
+                    <!-- 清除浮动 -->
+                    <div class="clr"></div>
+                    <ul class="d-flex flex-wrap justify-content-between mt-3">
+                        <li class="animation">
+                            <a href="#">
+                                <div class="animation_box"><img src="/img/company_details/rcyj_xagd.jpg" class="animation_amplify"></div>
+                                <p class="case_title pt-2 ml-1">西岸观邸</p>
+                                <p class="case_details pt-1 pb-3 ml-1">
+                                    <span>94</span>m&sup2;/三居/美式/全包
+                                </p>  
+                            </a>
+                        </li>
+                        <li class="animation">
+                            <a href="#">
+                                <div class="animation_box">
+                                    <img src="/img/company_details/rcyj_xjyj.jpg" class="w-100 animation_amplify">
+                                </div>
+                                <p class="case_title pt-2 ml-1">西街御景</p>
+                                <p class="case_details pt-1 pb-3 ml-1">
+                                    <span>96</span>m&sup2;/三居/现代/全包
+                                </p> 
+                            </a>
+                        </li>
+                        <li class="animation">
+                            <a href="#">
+                                <div class="animation_box">
+                                    <img src="http://127.0.0.1:3000/img/company_details/rcyj_gnsy.jpg" class="w-100 animation_amplify">
+                                </div>
+                                <p class="case_title pt-2 ml-1">观南上域</p>
+                                <p class="case_details pt-1 pb-3 ml-1">
+                                    <span>95</span>m&sup2;/三居/现代/全包
+                                </p>
+                            </a>
+                        </li>
+                        <li class="animation">
+                            <a href="#">
+                                <div class="animation_box">
+                                    <img src="http://127.0.0.1:3000/img/company_details/rcyj_lhyg.jpg" class="w-100 animation_amplify"> 
+                                </div>
+                                <p class="case_title pt-2 ml-1">龙华阳光</p>
+                                <p class="case_details pt-1 pb-3 ml-1">
+                                    <span>105</span>m&sup2;/三居/现代/全包 
+                                </p>
+                            </a>
+                        </li>
+                        <li class="animation">
+                            <a href="#">
+                                <div class="animation_box">
+                                    <img src="http://127.0.0.1:3000/img/company_details/rcyj_jgfy.jpg" class="w-100 animation_amplify">    
+                                </div>
+                                <p class="case_title pt-2 ml-1">加国枫韵</p>
+                                <p class="case_details pt-1 pb-3 ml-1">
+                                    <span>90</span>m&sup2;/二居/现代/全包 
+                                </p>
+                            </a>
+                        </li>
+                        <li class="animation">
+                            <a href="#">
+                                <div class="animation_box">
+                                    <img src="http://127.0.0.1:3000/img/company_details/rcyj_hsw.jpg" class="w-100 animation_amplify">
+                                </div>
+                                <p class="case_title pt-2 ml-1">红树湾</p>
+                                <p class="case_details pt-1 pb-3 ml-1">
+                                    <span>115</span>m&sup2;/三居/北欧/全包 
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 右侧 服务概况 -->
+                <div class="service float-right">
+                    <!-- <p class="service_title">服务概况</p>
+                    <div class="s_info mt-2">
+                        <p>营业时间</p>
+                        <p>周一~周日,每天09:00-22:00</p>
+                    </div>
+                    <div class="s_info mt-2">
+                        <p>承接价位</p>
+                        <p>0-100万</p>
+                    </div>
+                    <div class="s_info mt-2">
+                        <p>服务范围</p>
+                        <p>双流县、成华区、金牛区、锦江区、龙泉驿区、青羊区、温江区...</p>
+                    </div>
+                    <div class="s_info mt-2">
+                        <p>专长风格</p>
+                        <p>简约、美式、北欧</p>
+                    </div> -->
+                </div>
+                <!-- 左侧 设计团队 -->
+                <div class="designer_group col-md-9 col-sm-12 float-left mb-3">
+                    <p class="module_title float-left">设计团队</p>
+                    <a href="#" class="arrow float-right">全部11人</a>
+                    <!-- 清除浮动 -->
+                    <div class="clr"></div>
+                    <ul class="designers d-flex flex-nowrap justify-content-between mt-3">
+                        <li>
+                            <a href="#"><img src="http://127.0.0.1:3000/img/company_details/rcyj_chief_1.jpg"></a>
+                            <p class="position">首席设计师</p>
+                            <p class="experience">10年经验 113套案例</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="http://127.0.0.1:3000/img/company_details/rcyj_chief_2.jpg"></a>
+                            <p class="position">首席设计师</p>
+                            <p class="experience">10年经验 113套案例</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="http://127.0.0.1:3000/img/company_details/rcyj_chief_3.jpg"></a>
+                            <p class="position">首席设计师</p>
+                            <p class="experience">10年经验 113套案例</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="http://127.0.0.1:3000/img/company_details/rcyj_chief_4.jpg"></a>
+                            <p class="position">首席设计师</p>
+                            <p class="experience">10年经验 113套案例</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="http://127.0.0.1:3000/img/company_details/rcyj_chief_5.jpg"></a>
+                            <p class="position">首席设计师</p>
+                            <p class="experience">10年经验 113套案例</p>
+                        </li>
+                    </ul>
+                    <!-- <div class="designer">
+                        <a href="#"><img src="http://127.0.0.1:3000/img/company_details/rcyj_chief_1.jpg"></a>
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="clr"></div>
+    </main>
+    <footer id="footer"></footer>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/company_details.js"></script>
+</body>
+</html>

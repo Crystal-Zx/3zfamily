@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>3zfamily</title>
+</head>
+<body>
+    <header id="header"></header>
+    <main id="main">
+        <!-- 轮播楼层 -->
+        <div class="carousel slide" data-ride="carousel" id="carousel">
+            <ul class="carousel-indicators">
+                <!--指示符-->
+                <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+            </ul>
+            <!--轮播图片-->
+            <div class="carousel-inner">
+                <!-- <div class="carousel-item active"><a href="#"><img src="img/index/index_banner_carousel_1.jpg" alt="" class="w-100"></a></div>
+                <div class="carousel-item"><a href="#"><img src="img/index/index_banner_carousel_2.jpg" alt="" class="w-100"></a></div>
+                <div class="carousel-item"><a href="#"><img src="img/index/index_banner_carousel_3.jpg" alt="" class="w-100"></a></div>
+                <div class="carousel-item"><a href="#"><img src="img/index/index_banner_carousel_4.jpg" alt="" class="w-100"></a></div>
+                <div class="carousel-item"><a href="#"><img src="img/index/index_banner_carousel_5.jpg" alt="" class="w-100"></a></div> -->
+            </div>
+            <!--左右箭头-->
+            <a href="#carousel" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+            <a href="#carousel" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+        </div>
+        <!-- 热门功能楼层-->
+        <div class="hot-func">
+            <div class="container pt-4">
+                <ul class="d-flex justify-content-between">
+                    <li class="small-box animation">
+                        <!-- <div>
+                            <p class="small-box-inner_title">免费设计</p>
+                            <p class="small-box-inner_details">获取三份设计方案</p>
+                        </div>
+                        <img src="img/hot_func_1.png" alt="" class="small-box-inner_pic img-fluid"> -->
+                        <p class="small-box-inner_title">免费设计</p>
+                        <p class="small-box-inner_details">获取三份设计方案</p>
+                        <img src="img/index/hot_func_1.png" alt="" class="small-box-inner_pic img-fluid">
+                    </li>
+                    <li class="small-box animation">
+                        <p class="small-box-inner_title">免费报价</p>
+                        <p class="small-box-inner_details">算算装修要花多少钱</p>
+                        <img src="img/index/hot_func_2.png" alt="" class="small-box-inner_pic img-fluid">
+                    </li>
+                    <li class="small-box animation">
+                        <p class="small-box-inner_title">全屋定制</p>
+                        <p class="small-box-inner_details">让家轻松扩容30%</p>
+                        <img src="img/index/hot_func_3.png" alt="" class="small-box-inner_pic img-fluid">
+                    </li>
+                    <li class="small-box animation">
+                        <p class="small-box-inner_title">装修分期</p>
+                        <p class="small-box-inner_details">按月付款轻松住新家</p>
+                        <img src="img/index/hot_func_4.png" alt="" class="small-box-inner_pic img-fluid">
+                    </li>
+                    <li class="small-box animation">
+                        <p class="small-box-inner_title">房检官</p>
+                        <p class="small-box-inner_details">装修验收就找我</p>
+                        <img src="img/index/hot_func_5.png" alt="" class="small-box-inner_pic img-fluid">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 楼层一 找装修 -->
+        <div class="container" id="floor_1">
+            <p class="floor_title d-flex justify-content-center">找装修</p>
+            <p class="floor_subtitle d-flex justify-content-center">甄选城中优质装修公司，丰富选择实现理想家</p>
+            <ul class="d-flex justify-content-between">
+                <!-- <li class="com_recommended animation">
+                    <div class="com_recommeded_box"><img src="img/index/bg_img_jrht.jpg" alt="" class="com_bg_img"></div>
+                    <div class="com_cicon_box m-auto"><img src="img/index/cicon_jrht.jpg" alt="" class="com_cicon m-auto"></div>
+                    <div class="com_details">
+                        <div class="d-flex justify-content-center">
+                            <p class="md_font font-weight-bold">佳瑞豪庭装饰</p>
+                        </div>
+                        <ul class="d-flex justify-content-around ml-5 mr-5 mt-3">
+                            <li>设计案例：<span class="orange_font">6</span></li>
+                            <li>好评率：<span class="orange_font">80%</span></li>
+                        </ul>
+                        <div class="com_tel d-flex justify-content-center mt-3">免费预约：<span class="orange_font">17188384968</span></div>
+                    </div>
+                </li>
+                <li class="com_recommended animation">
+                    <div class="com_recommeded_box"><img src="img/index/bg_img_yxzs.jpg" alt="" class="com_bg_img"></div>
+                    <div class="com_cicon_box m-auto"><img src="img/index/cicon_yxzs.jpg" alt="" class="com_cicon m-auto"></div>
+                    <div class="com_details">
+                        <div class="d-flex justify-content-center">
+                            <p class="md_font font-weight-bold">成都圆心装饰</p>
+                        </div>
+                        <ul class="d-flex justify-content-around ml-5 mr-5 mt-3">
+                            <li>设计案例：<span class="orange_font">127</span></li>
+                            <li>好评数：<span class="orange_font">120</span></li>
+                        </ul>
+                        <div class="com_tel d-flex justify-content-center mt-3">免费预约：<span class="orange_font">17138373654</span></div>
+                    </div>
+                </li>
+                <li class="com_recommended animation">
+                    <div class="com_recommeded_box"><img src="img/index/bg_img_qqs.jpg" alt="" class="com_bg_img"></div>
+                    <div class="com_cicon_box m-auto"><img src="img/index/cicon_qqs.jpg" alt="" class="com_cicon m-auto"></div>
+                    <div class="com_details">
+                        <div class="d-flex justify-content-center">
+                            <p class="md_font font-weight-bold">亲情树装饰</p>
+                        </div>
+                        <ul class="d-flex justify-content-around ml-5 mr-5 mt-3">
+                            <li>设计案例：<span class="orange_font">1953</span></li>
+                            <li>好评数：<span class="orange_font">1940</span></li>
+                        </ul>
+                        <div class="com_tel d-flex justify-content-center mt-3">免费预约：<span class="orange_font">17131424383</span></div>
+                    </div>
+                </li> -->
+            </ul>
+            <ul class="d-flex justify-content-between mt-5">
+                <!-- <li class="com_recommended animation">
+                    <div class="com_recommeded_box"><img src="img/index/bg_img_rcyj.jpg" alt="" class="com_bg_img"></div>
+                    <div class="com_cicon_box m-auto"><img src="img/index/cicon_rcyj.jpg" alt="" class="com_cicon m-auto"></div>
+                    <div class="com_details">
+                        <div class="d-flex justify-content-center">
+                            <p class="md_font font-weight-bold">成都蓉城壹家</p>
+                        </div>
+                        <ul class="d-flex justify-content-around ml-5 mr-5 mt-3">
+                            <li>设计案例：<span class="orange_font">744</span></li>
+                            <li>好评数：<span class="orange_font">650</span></li>
+                        </ul>
+                        <div class="com_tel d-flex justify-content-center mt-3">免费预约：<span class="orange_font">13183843406</span></div>
+                    </div>
+                </li>
+                <li class="com_recommended animation">
+                    <div class="com_recommeded_box"><img src="img/index/bg_img_cmj.jpg" alt="" class="com_bg_img"></div>
+                    <div class="com_cicon_box m-auto"><img src="img/index/cicon_cmj.jpg" alt="" class="com_cicon m-auto"></div>
+                    <div class="com_details">
+                        <div class="d-flex justify-content-center">
+                            <p class="md_font font-weight-bold">创美居装饰</p>
+                        </div>
+                        <ul class="d-flex justify-content-around ml-5 mr-5 mt-3">
+                            <li>设计案例：<span class="orange_font">1541</span></li>
+                            <li>好评数：<span class="orange_font">1487</span></li>
+                        </ul>
+                        <div class="com_tel d-flex justify-content-center mt-3">免费预约：<span class="orange_font">13183848074</span></div>
+                    </div>
+                </li>
+                <li class="com_recommended animation">
+                    <div class="com_recommeded_box"><img src="img/index/bg_img_yxj.jpg" alt="" class="com_bg_img"></div>
+                    <div class="com_cicon_box m-auto"><img src="img/index/cicon_yxj.jpg" alt="" class="com_cicon m-auto"></div>
+                    <div class="com_details">
+                        <div class="d-flex justify-content-center">
+                            <p class="md_font font-weight-bold">逸馨居</p>
+                        </div>
+                        <ul class="d-flex justify-content-around ml-5 mr-5 mt-3">
+                            <li>设计案例：<span class="orange_font">1530</span></li>
+                            <li>好评数：<span class="orange_font">1105</span></li>
+                        </ul>
+                        <div class="com_tel d-flex justify-content-center mt-3">免费预约：<span class="orange_font">17692620787</span></div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <!-- 楼层二 找设计 -->
+        <div class="container" id="floor_2">
+            <p class="floor_title d-flex justify-content-center">找设计</p>
+            <p class="floor_subtitle d-flex justify-content-center">搜索海量家居美图，发现新家装修灵感</p>
+            <div id="xdjy">
+                <ul class="d-flex justify-content-between flex-wrap-nowrap">
+                    <li>
+                        <div class="case_style_box bgcolor_1 float-md-left animation d-flex align-items-center justify-content-center">
+                            <p class="case_style_title">现代简约</p>
+                        </div>
+                    </li>
+                    <!-- <li class="animation"><img src="img/index/xdjy_1.jpg" alt="" class="img-fluid"></li>
+                    <li class="animation"><img src="img/index/xdjy_2.jpg" alt="" class="img-fluid"></li>
+                    <li class="animation"><img src="img/index/xdjy_3.jpg" alt="" class="img-fluid"></li> -->
+                </ul>
+            </div>
+            <div id="gdzs" class="mt-2">
+                <ul class="d-flex justify-content-between flex-wrap-nowrap">
+                    <li>
+                        <div class="case_style_box bgcolor_2 float-md-left animation d-flex align-items-center justify-content-center">
+                            <p class="case_style_title">古典中式</p>
+                        </div>
+                    </li>
+                    <!-- <li class="animation"><img src="img/index/gdzs_1.jpg" alt="" class="img-fluid"></li>
+                    <li class="animation"><img src="img/index/gdzs_2.jpg" alt="" class="img-fluid"></li>
+                    <li class="animation"><img src="img/index/gdzs_3.jpg" alt="" class="img-fluid"></li> -->
+                </ul>
+            </div>
+            <div id="flos" class="mt-2">
+                <ul class="d-flex justify-content-between flex-wrap-nowrap w-100">
+                    <li>
+                        <div class="case_style_box bgcolor_3 float-md-left animation d-flex align-items-center justify-content-center">
+                            <p class="case_style_title">富丽欧式</p>
+                        </div>
+                    </li>
+                    <!-- <li class="animation"><img src="img/index/flos_1.jpg" alt="" class="img-fluid"></li>
+                    <li class="animation"><img src="img/index/flos_2.jpg" alt="" class="img-fluid"></li>
+                    <li class="animation"><img src="img/index/flos_3.jpg" alt="" class="img-fluid"></li> -->
+                </ul>
+            </div>
+            <div id="gdfg" class="mt-2">
+                <ul class="d-flex justify-content-between flex-wrap-nowrap">
+                    <li>
+                        <div class="case_style_box bgcolor_4 float-md-left animation d-flex align-items-center justify-content-center">
+                            <p class="case_style_title">更多风格>></p>
+                        </div>
+                    </li>
+                    <!-- <li class="animation"><img src="img/index/gdfg_1.jpg" alt="" class="img-fluid"></li>
+                    <li class="animation"><img src="img/index/gdfg_2.jpg" alt="" class="img-fluid"></li>
+                    <li class="animation"><img src="img/index/gdfg_3.jpg" alt="" class="img-fluid"></li> -->
+                </ul>
+            </div>
+        </div>
+        <!-- 楼层三 找攻略 -->
+        <div class="container" id="floor_3">
+            <p class="floor_title d-flex justify-content-center">找攻略</p>
+            <p class="floor_subtitle d-flex justify-content-center">学习装修经验与交流装修问题，小白晋级达人就靠它</p>
+            <ul class="d-flex">
+                <li class="gl_box animation">
+                    <div class="gl_top">
+                        <div class="gl_top_title text-center">
+                            <!--用于占位 在CSS中改变背景图-->
+                            <div class="gl_top_title_pic_1"></div> 
+                            <!-- <img src="img/zxgl_pic.png" alt="" class="gl_title_pic"> -->
+                            <p class="gl_title pt-2">装修攻略</p>
+                        </div>
+                    </div>
+                    <div class="gl_main">
+                        <ul class="list-unstyled w-75 m-auto">
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="gl_footer float-md-right mt-2 mr-3"></a>
+                </li>
+                <li class="gl_box animation">
+                    <div class="gl_top_2">
+                        <div class="gl_top_title text-center">
+                            <div class="gl_top_title_pic_2"></div>
+                            <!-- <img src="img/zxrj_pic.png" alt="" class="gl_title_pic"> -->
+                            <p class="gl_title pt-2">装修日记</p>
+                        </div>
+                    </div>
+                    <div class="gl_main">
+                        <ul class="list-unstyled w-75 m-auto">
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="gl_footer float-md-right mt-2 mr-3"></a>
+                </li>
+                <li class="gl_box animation">
+                    <div class="gl_top_3">
+                        <div class="gl_top_title text-center">
+                            <div class="gl_top_title_pic_3"></div>
+                            <!-- <img src="img/zxwd_pic.png" alt="" class="gl_title_pic"> -->
+                            <p class="gl_title pt-2">装修问答</p>
+                        </div>
+                    </div>
+                    <div class="gl_main">
+                        <ul class="list-unstyled w-75 m-auto">
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                            <li class="gl_list_font pt-4"><a href="#">装修造价表，了解一下</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="gl_footer float-md-right mt-2 mr-3"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- 服务流程楼层 -->
+        <div class="container" id="floor_4">
+            <p class="floor_title d-flex justify-content-center">服务流程</p>
+            <div class="row text-center pt-5 pb-5">
+                <div class="col pl-0 pr-0">
+                    <img src="img/index/lc_pic_1.png" alt="">
+                    <p class="mt-3 lc_title">在线预约</p>
+                    <p class="mt-1 lc_subtitle">登记联系方式</p>
+                </div>
+                <div class="col pl-0 pr-0">
+                    <img src="img/index/lc_pic_2.png" alt="">
+                    <p class="mt-3 lc_title">量房沟通</p>
+                    <p class="mt-1 lc_subtitle">免费量房设计</p>
+                </div>
+                <div class="col pl-0 pr-0">
+                    <img src="img/index/lc_pic_3.png" alt="">
+                    <p class="mt-3 lc_title">对比方案</p>
+                    <p class="mt-1 lc_subtitle">对比装修公司方案</p>
+                </div>
+                <div class="col pl-0 pr-0">
+                    <img src="img/index/lc_pic_4.png" alt="">
+                    <p class="mt-3 lc_title">签订合同</p>
+                    <p class="mt-1 lc_subtitle">签订合同 托管钱款</p>
+                </div>
+                <div class="col pl-0 pr-0">
+                    <img src="img/index/lc_pic_5.png" alt="">
+                    <p class="mt-3 lc_title">装修施工</p>
+                    <p class="mt-1 lc_subtitle">工人按排期施工交付</p>
+                </div>
+                <div class="col pl-0 pr-0">
+                    <img src="img/index/lc_pic_6.png" alt="">
+                    <p class="mt-3 lc_title">竣工验收</p>
+                    <p class="mt-1 lc_subtitle">验收通过全屋装修指标</p>
+                </div>
+                <div class="col pl-0 pr-0">
+                    <img src="img/index/lc_pic_7.png" alt="">
+                    <p class="mt-3 lc_title">享受保障</p>
+                    <p class="mt-1 lc_subtitle">享受合同约定质保</p>
+                </div>
+            </div>
+        </div>
+        <!-- 底部图片楼层 -->
+        <div id="floor_5">
+            <div class="container">
+                <img src="img/index/index_footer_represent.png" alt="" class="footer_pic">
+                <p class="text-white footer_title font-weight-bold">土巴兔专注装修10年</p>
+                <p class="text-white footer_subtitle">始 终 为 用 户 创 造 价 值</p>
+                <img src="img/index/index_footer_data.png" alt="" class="float-md-right mt-5 w-50">
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
