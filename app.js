@@ -14,6 +14,7 @@ app.listen(3000,()=>{
     console.log("web服务器创建成功！")
 });
 /*使用body-parser中间件*/
+// 解析post请求数据
 app.use(bodyParser.urlencoded({
     extended:false
 }));

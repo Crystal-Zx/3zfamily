@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const pool = require("../pool.js")
 
-router.get("/getCarousel",(req,res)=>{
+router.get("/getCarousel",(req,res)=>{``
     var sql = "SELECT * FROM index_banner_carousel";
     pool.query(sql,[],(err,result)=>{
         if(err) throw err;

@@ -108,7 +108,7 @@ $(function(){
             success: function(result){
                 console.log(result);
                 var html = "";
-                if(cid == 4){
+                if(cid == 1){
                     html = `<a href="#" class="arrow float-right">全部${result.length}套</a>`
                     // 填充查询结果记录数
                     $(".bottom .case_list>a").replaceWith($(html));
@@ -128,7 +128,7 @@ $(function(){
                         </li>`
                 }
                 var $ul = $(".bottom .case_list ul");
-                if(cid == 4){
+                if(cid == 1){
                     $ul.html(html);
                 }
                 
