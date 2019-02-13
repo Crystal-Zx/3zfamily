@@ -183,7 +183,7 @@ router.post('/changeAvatar',(req,res)=>{
       // 若用户存在自定义头像，则先删除原有的头像
       fs.unlinkSync(`./public/img/avatar/${uid}.jpg`,(err)=>{
         if(err) throw err;
-        console.log('删除成功！');
+        // console.log('删除成功！');
       });
       // 重命名上传头像
       fs.renameSync(oldPath,`./public/img/avatar/${uid}.jpg`,(err)=>{
@@ -209,6 +209,104 @@ router.post('/changeAvatar',(req,res)=>{
     res.write(JSON.stringify({ code: 1,msg:'上传头像成功！'}));
     res.end();
   });
+})
+
+// 用户点击收藏/取消收藏公司
+router.get('/collect',(req,res)=>{
+  var $cid = req.query.cid;
+  var $uid = req.query.uid;
+  res.writeHead(200,{
+    "Content-Type":"application:json;charset=utf-8",
+    "Access-Control-Allow-Origin":"*"
+  });
+  // var $cname = '',$cicon_url = '',$case_num='',$praise='',$tel='';
+  // 1.查询收藏列表中该用户收藏有无该公司
+  var sql1 = 'SELECT COUNT(*) AS num FROM collect_list WHERE cid = ? AND uid = ?';
+  pool.query(sql1,[$cid,$uid],(err,result)=>{
+    if(err) throw err;
+    var num = result[0]['num'];
+    // 该用户需收藏该公司
+    if(num == 0){
+      // 查询该公司基本信息
+      var sql2 = 'SELECT cname,cicon_url,case_num,praise,tel FROM company_details WHERE cid = ?';
+      // 添加该公司到收藏列表
+      pool.query(sql2,[$cid],(err,result)=>{
+        if(err) throw err;
+        if(result.length > 0){
+          var {cname,cicon_url,case_num,praise,tel} = result[0];
+          var sql3 = 'INSERT INTO collect_list VALUES (NULL,?,?,?,?,?,?,?)';
+          pool.query(sql3,[$cid,cname,cicon_url,case_num,praise,tel,$uid],(err,result)=>{
+            if(err) throw err;
+            if(result.affectedRows > 0){
+              res.write(JSON.stringify({code: 1,msg:'收藏成功！'}));
+              res.end();
+            }else{
+              res.write(JSON.stringify({code: -1,msg:'添加收藏失败！'}));
+              res.end();
+            }
+          })
+        }
+      })
+    // 该用户需取消收藏该公司
+    }else{
+      var sql4 = 'DELETE FROM collect_list WHERE cid = ?';
+      pool.query(sql4,[$cid],(err,result)=>{
+        if(err) throw err;
+        if(result.affectedRows > 0){
+          res.write(JSON.stringify({code: 2,msg:'取消收藏成功！'}));
+          res.end();
+        }else{
+          res.write(JSON.stringify({code: -2,msg:'取消收藏失败！'}));
+          res.end();
+        }
+      })
+    }
+  })
+})
+
+// 判断用户是否收藏该公司
+router.get('/isCollected',(req,res)=>{
+  var $cid = req.query.cid;
+  var $uid = req.query.uid;
+  res.writeHead(200,{
+    "Content-Type":"application:json;charset=utf-8",
+    "Access-Control-Allow-Origin":"*"
+  });
+  // 查询收藏列表中该用户收藏有无该公司
+  var sql = 'SELECT * FROM collect_list WHERE cid = ? AND uid = ?';
+  pool.query(sql,[$cid,$uid],(err,result)=>{
+    if(err) throw err;
+    // 该用户的收藏列表中该公司已收藏
+    if(result.length > 0){
+      res.write(JSON.stringify({code: 1}));
+    }else{
+      res.write(JSON.stringify({code: 0}));
+    }
+    res.end();
+  })
+})
+
+// 查询该用户的收藏列表
+router.get('/getCollectList',(req,res)=>{
+  var $uid = req.query.uid;
+  res.writeHead(200,{
+    "Content-Type":"application:json;charset=utf-8",
+    "Access-Control-Allow-Origin":"*"
+  });
+  // 查询收藏列表中该用户收藏有无该公司
+  var sql = 'SELECT * FROM collect_list WHERE uid = ?';
+  pool.query(sql,[$uid],(err,result)=>{
+    if(err) throw err;
+    // 该用户的收藏列表中该公司已收藏
+    if(result.length > 0){
+      res.write(JSON.stringify({code: 1,
+        collectList:result
+      }));
+    }else{
+      res.write(JSON.stringify({code: 0}));
+    }
+    res.end();
+  })
 })
 
 module.exports = router;

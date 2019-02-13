@@ -160,6 +160,7 @@ INSERT INTO `designer_details` VALUES (NULL,'田素华','img/company_details/d4_
 INSERT INTO `designer_details` VALUES (NULL,'赵君桥','img/company_details/d4_3.jpg','首席设计师',6,11,4);
 INSERT INTO `designer_details` VALUES (NULL,'康涛涛','img/company_details/d4_4.jpg','首席设计师',6,40,4);
 INSERT INTO `designer_details` VALUES (NULL,'毛玉全','img/company_details/d4_5.jpg','首席设计师',6,12,4);
+
 -- ----------------------------------------------------------
 -- 房产表结构   `house_details`
 -- ----------------------------------------------------------
@@ -294,6 +295,18 @@ INSERT INTO `user_info` VALUES (NULL,'15976767676','dd3456',md5('1234z.'),'img/a
 INSERT INTO `user_info` VALUES (NULL,'15986868686','dd4567',md5('1234z.'),'img/avatar/4.jpg');
 
 -- ----------------------------------------------------------
--- 用户收藏列表   `save_list_details`
+-- 用户收藏列表   `collect_list`
 -- ----------------------------------------------------------
-
+DROP TABLE IF EXISTS `collect_list`;
+CREATE TABLE `collect_list`(
+    `lid` INT(11) NOT NULL AUTO_INCREMENT,      #列表编号
+    `cid` INT(11) DEFAULT NULL,                 #公司编号
+    `cname` VARCHAR(128) DEFAULT NULL,          #公司名称
+    `cicon_url` VARCHAR(128) DEFAULT NULL,      #公司商标
+    `case_num` INT(32) DEFAULT NULL,            #公司案例数 各设计师案例数之和
+    `praise` VARCHAR(64) DEFAULT NULL,          #公司所获好评率
+    `tel` VARCHAR(64) DEFAULT NULL,             #公司联系电话
+    `uid` INT(11) DEFAULT NULL,                 #用户编号
+    FOREIGN KEY(`uid`) REFERENCES user_info(`uid`),
+    PRIMARY KEY(`lid`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
